@@ -1,0 +1,44 @@
+// TEMPLATE STYLES
+
+// bootstrap overrides only (taken from variables.scss)
+// hint: write values without !default
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$blue-gd: #009cdd;
+$yellow-gd: #f4d200;
+$dark-blue: #004792;
+$darker-blue: #002e5e;
+
+$primary: $blue-gd;
+$secondary: $yellow-gd;
+
+$link-color: $blue-gd;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "white": $white,
+    "bleu-fonce": $darker-blue,
+    "bleu": $dark-blue,
+    "primary": $primary,
+    "secondary": $secondary,
+    "red": $red,
+  ),
+  $theme-colors
+);
+
+$font-family-sans-serif: "Titillium Web", sans-serif;
+$font-size-body: $font-size-base * 1.375;
+$h1-font-size: $font-size-base * 2.375;
+$h2-font-size: $font-size-base * 1.375;
+$font-weight-semibold: 600;
