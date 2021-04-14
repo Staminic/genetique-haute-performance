@@ -1958,7 +1958,6 @@ input[type=time].form-control,
 input[type=datetime-local].form-control,
 input[type=month].form-control {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 
@@ -3434,7 +3433,6 @@ input[type=button].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -3547,7 +3545,6 @@ input[type=button].btn-block {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-range:focus {
@@ -3603,8 +3600,7 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
@@ -6935,7 +6931,6 @@ button.bg-red:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -6955,9 +6950,8 @@ button.bg-red:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -15704,7 +15698,7 @@ h2 {
 }
 
 .navbar-brand img {
-  height: 78px; /* 90px */
+  height: 90px;
 }
 
 .sitename {
@@ -15824,5 +15818,16 @@ label {
 
 #system-message-container {
   background-color: #ffc107;
+}
+
+.item-page.onepage [class*=col-] {
+  display: flex;
+  align-items: center;
+}
+.item-page.onepage [class*=col-] img {
+  height: 500px;
+  width: auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 /*# sourceMappingURL=main.css.map */

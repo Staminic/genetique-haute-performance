@@ -1,0 +1,15 @@
+.item-page {
+  &.onepage {
+    [class*="col-"] {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 500px;
+        width: auto;
+        object-fit: cover;
+        object-position: bottom;
+      }
+    }
+  }
+}
