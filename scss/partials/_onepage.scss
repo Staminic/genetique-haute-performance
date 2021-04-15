@@ -1,15 +1,149 @@
 .item-page {
   &.onepage {
     [class*="col-"] {
-      display: flex;
-      align-items: center;
+      .picture {
+        position: relative;
 
-      img {
-        height: 500px;
-        width: auto;
-        object-fit: cover;
-        object-position: bottom;
+        @include media-breakpoint-up(lg) {
+          &::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            z-index: 1;
+            background-color: $white;
+            transform: translatey(-50%) rotate(45deg);
+          }
+        }
+      }
+
+      img:not(.dice) {
+        margin-bottom: $spacer;
+
+        @include media-breakpoint-up(lg) {
+          height: 500px;
+          width: auto;
+          position: relative;
+          margin: 0;
+          object-fit: cover;
+          object-position: center;
+        }
       }
     }
+  }
+}
+
+section {
+  &.background {
+    background-color: $light-gray;
+
+    [class*="col-"] {
+      .picture {
+        @include media-breakpoint-up(lg) {
+          &::before {
+            background-color: $light-gray !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.background-alt {
+    background-color: $blue-ghp;
+  }
+
+  &.right {
+    [class*="col-"] {
+      &:first-child {
+        order: 2;
+
+        .picture {
+          @include media-breakpoint-up(lg) {
+            &::before {
+              right: auto;
+              left: -15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  column-gap: $spacer;
+  row-gap: $spacer;
+  margin: $spacer 0;
+}
+
+.picto {
+  background-color: transparent;
+  background-position-x: 97%;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 20%;
+
+  @include media-breakpoint-up(lg) {
+    &.picto-tr {
+      background-position-x: right;
+      background-position-y: top;
+    }
+
+    &.picto-bl {
+      background-position-x: left;
+      background-position-y: bottom;
+    }
+
+    &.picto-tl {
+      background-position-x: left;
+      background-position-y: top;
+    }
+  }
+}
+
+section {
+  &.next {
+    padding-bottom: 6rem !important;
+    background-image: url("../img/picto-next.svg");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+
+    &#precision {
+      .picto {
+        background-image: url("../img/picto-cible.svg");
+      }
+    }
+
+    &.background {
+      border-bottom: 3rem solid $light-gray;
+    }
+  }
+}
+
+section {
+  &#hero {
+    padding-top: 6rem;
+    @include media-breakpoint-up(xl) {
+      padding-top: 3rem;
+    }
+    padding-bottom: 12rem;
+    background-color: transparent;
+    background-image: url("../img/wave.svg"), url("../img/hero-bg.jpg");
+    background-position: center bottom, center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
   }
 }

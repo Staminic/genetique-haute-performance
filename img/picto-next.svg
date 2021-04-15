@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+  <g id="picto-next" transform="translate(-901.375 -1602.375)">
+    <path id="Tracé_611" data-name="Tracé 611" d="M0,0,33.3,25.32,0,50.641" transform="translate(970.02 1632.877) rotate(90)" fill="none" stroke="#00b8f1" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(901.375 1602.375)" fill="none" stroke="#00b8f1" stroke-width="2">
+      <circle cx="43" cy="43" r="43" stroke="none"/>
+      <circle cx="43" cy="43" r="42" fill="none"/>
+    </g>
+  </g>
+</svg>

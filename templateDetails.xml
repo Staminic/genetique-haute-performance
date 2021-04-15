@@ -36,8 +36,6 @@
 
 	<positions>
 		<position>navbar</position>
-		<position>blazon</position>
-		<position>connexion-notification</position>
 		<position>breadcrumbs</position>
 		<position>sidebar</position>
 		<position>footer</position>
