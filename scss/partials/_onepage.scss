@@ -71,6 +71,16 @@ section {
       }
     }
   }
+
+  &#contact {
+    .h1 {
+      font-weight: $font-weight-black;
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
 }
 
 .benefits {
@@ -127,6 +137,24 @@ section {
       }
     }
 
+    &#personnalisation {
+      .picto {
+        background-image: url("../img/picto-loupe.svg");
+      }
+    }
+
+    &#performances {
+      .picto {
+        background-image: url("../img/picto-power.svg");
+      }
+    }
+
+    &#potentiel {
+      .picto {
+        background-image: url("../img/picto-graphique.svg");
+      }
+    }
+
     &.background {
       border-bottom: 3rem solid $light-gray;
     }
@@ -137,7 +165,7 @@ section {
   &#hero {
     padding-top: 6rem;
     @include media-breakpoint-up(xl) {
-      padding-top: 3rem;
+      padding-top: 0;
     }
     padding-bottom: 12rem;
     background-color: transparent;
@@ -145,5 +173,47 @@ section {
     background-position: center bottom, center;
     background-repeat: no-repeat;
     background-size: auto, cover;
+    color: $dark-blue;
+    font-family: $font-family-condensed;
+
+    h1 {
+      font-weight: $font-weight-black;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+        color: $black;
+        font-weight: $font-weight-light;
+        font-size: $h3-font-size;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    nav {
+      a {
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacer / 2;
+        background-color: $blue;
+        color: $white;
+        font-size: $h3-font-size;
+        text-transform: uppercase;
+
+        &:before {
+          content: url("../img/nav-arrow.svg");
+          height: 30px;
+          line-height: 30px;
+          margin-right: $spacer / 2;
+        }
+      }
+    }
   }
+}
+
+.dice {
+  max-width: 80%;
+  margin-top: $spacer;
 }

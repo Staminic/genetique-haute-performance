@@ -9,14 +9,12 @@ body {
 }
 
 h1 {
-  color: $darker-blue;
-  font-weight: $font-weight-bold;
+  color: $dark-blue;
 }
 
 h2 {
-  margin-top: $spacer * 4;
-  margin-bottom: $spacer * 2;
-  text-transform: uppercase;
+  color: $dark-blue;
+  font-weight: $font-weight-light;
 }
 
 .fullwidth {
@@ -68,7 +66,7 @@ h2 {
   height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
 
   @include media-breakpoint-up(md) {
@@ -78,8 +76,13 @@ h2 {
 
 .slogan {
   margin: 0;
+  // margin-top: auto;
   color: $white;
+  font-size: $h1-font-size;
+  font-weight: $font-weight-black;
+  letter-spacing: 0.03em;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .sitename {
@@ -177,6 +180,9 @@ h2 {
 
 //FOOTER
 footer {
+  background-color: $black;
+  color: $white;
+
   .logos {
     display: flex;
     flex-wrap: wrap;
@@ -203,17 +209,26 @@ label {
   line-height: 1;
 }
 
-.cf-form-wrap {
-  padding: 0 !important;
+.cf-control-label {
+  text-align: left;
 }
 
 .cf-label {
   font-weight: $font-weight-normal !important;
 }
 
+.cf-required-label {
+  color: $white !important;
+}
+
+.cf-btn-text {
+  font-weight: $font-weight-black;
+  text-transform: uppercase;
+}
+
 .convertforms.cf-success .cf-response {
-  background-color: $secondary;
-  color: black;
+  background-color: $black;
+  color: $white;
 }
 
 // MESSAGE

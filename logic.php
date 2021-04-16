@@ -19,7 +19,12 @@ $doc->setMetadata('viewport', 'width=device-width, initial-scale=1, shrink-to-fi
 
 // Google Fonts
 JDocumentHTML::addHeadLink('https://fonts.gstatic.com', 'preconnect', 'rel');
-$doc->addStyleSheet('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+$doc->addStyleSheet('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+
+JHtml::_('jquery.framework');
+$doc->addScript('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', '', array('integrity' => 'sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN', 'crossorigin' => 'anonymous', 'defer' => 'defer'));
+$doc->addScript($tpath . '/js/bootstrap.min.js', '', array('defer' => 'defer'));
+// $doc->addScript($tpath . '/js/script.js', '', array('defer' => 'defer'));
 
 // unset
 // unset($doc->_scripts[$this->baseurl .'/media/jui/js/jquery.min.js']);

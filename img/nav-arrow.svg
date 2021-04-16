@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 44 44">
+  <g id="nav-arrow" transform="translate(0 44) rotate(-90)">
+    <path id="Tracé_611" data-name="Tracé 611" d="M0,0,14.2,10.8,0,21.6" transform="translate(32.964 16.997) rotate(90)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#fff" stroke-width="1.5">
+      <circle cx="22" cy="22" r="22" stroke="none"/>
+      <circle cx="22" cy="22" r="21.25" fill="none"/>
+    </g>
+  </g>
+</svg>

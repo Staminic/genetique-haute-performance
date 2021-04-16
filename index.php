@@ -16,7 +16,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                     <a class="navbar-brand" href="/"><img class="img-fluid" src="templates/genetique-haute-performance/img/badge.png" alt="Logo Génétique Haute Performance" /></a>
                     <div class="wrapper">
                         <p class="d-none d-md-block slogan">Éleveurs Holstein</p>
-                        <a hef="#" class="text-white">Connexion</a>
+                        <a hef="#" class="mt-auto text-white d-none">Connexion</a>
                     </div>
                 
                 <!--
@@ -41,14 +41,14 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
         </div>
     </main>
 
-    <footer class="footer pt-1 pb-5">
+    <footer class="footer py-3">
         <div class="container">
             <jdoc:include type="modules" name="footer" />
         </div>
     </footer>
 
     <jdoc:include type="modules" name="debug" />
-    <script src="templates/genetique-haute-performance/build/app.js"></script>
+    <!-- <script src="templates/genetique-haute-performance/build/app.js"></script> -->
 </body>
 
 </html>

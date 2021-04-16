@@ -3,7 +3,7 @@
 // bootstrap overrides only (taken from variables.scss)
 // hint: write values without !default
 
-$blue: #007bff;
+$blue: #00b8f1;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #e83e8c;
@@ -16,7 +16,7 @@ $cyan: #17a2b8;
 
 $blue-gd: #009cdd;
 $yellow-gd: #f4d200;
-$dark-blue: #004792;
+$dark-blue: #1c6093;
 $darker-blue: #002e5e;
 $blue-ghp: #006a96;
 $light-gray: #f5f5f5;
@@ -39,8 +39,11 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-$font-family-sans-serif: "Titillium Web", sans-serif;
-$font-size-body: $font-size-base * 1.375;
-$h1-font-size: $font-size-base * 2.375;
-$h2-font-size: $font-size-base * 1.375;
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-family-condensed: "Roboto Condensed", sans-serif;
+$font-size-body: $font-size-base * 1.375; //22px
+$h1-font-size: $font-size-base * 3.75; //60px
+$h2-font-size: $font-size-base * 2.625; //42px
+$h3-font-size: $font-size-base * 2; //32px
 $font-weight-semibold: 600;
+$font-weight-black: 900;
