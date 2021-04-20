@@ -10,27 +10,30 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 </head>
 
 <body class="site <?php echo $active->alias . ($pageclass ? ' ' . $pageclass : ''); ?>">
-    <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                    <a class="navbar-brand" href="/"><img class="img-fluid" src="templates/genetique-haute-performance/img/badge.png" alt="Logo Génétique Haute Performance" /></a>
-                    <div class="wrapper">
-                        <p class="d-none d-md-block slogan">Éleveurs Holstein</p>
-                        <a hef="#" class="mt-auto text-white d-none">Connexion</a>
-                    </div>
-                
-                <!--
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><img src="templates/genetique-haute-performance/img/bars-solid.svg" /></span>
-                </button>
-                -->
-
-                <div class="collapse navbar-collapse flex-column" id="navbarsExampleDefault">
-                    <jdoc:include type="modules" name="navbar" />
-                </div>
+    <header id="header" class="header">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img class="img-fluid" src="templates/genetique-haute-performance/img/badge2.png" alt="Logo Génétique Haute Performance" /></a>
+            <div class="wrapper">
+                <p class="d-none d-md-block slogan">Éleveurs Holstein</p>
+                <a hef="#" class="mt-auto text-white d-none">Connexion</a>
             </div>
-        </nav>
+        </div>
     </header>
+
+    <nav class="navbar navbar-expand sticky-top">
+        <!--
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navModules" aria-controls="navModules" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="templates/genetique-haute-performance/img/bars-solid.svg" /></span>
+        </button>
+        -->
+
+        <div class="collapse navbar-collapse" id="navModules">
+            <div class="container-xl">
+                <jdoc:include type="modules" name="navbar" />
+            </div>
+        </div>
+    </nav>
+
 
     <main class="main container">
         <div class="row">
