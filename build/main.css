@@ -304,6 +304,11 @@ legend {
   color: inherit;
   white-space: normal;
 }
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
 
 progress {
   vertical-align: baseline;
@@ -355,17 +360,37 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 3.75rem;
 }
+@media (max-width: 1200px) {
+  h1, .h1 {
+    font-size: calc(1.5rem + 3vw);
+  }
+}
 
 h2, .h2 {
   font-size: 2.625rem;
+}
+@media (max-width: 1200px) {
+  h2, .h2 {
+    font-size: calc(1.3875rem + 1.65vw);
+  }
 }
 
 h3, .h3 {
   font-size: 2rem;
 }
+@media (max-width: 1200px) {
+  h3, .h3 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+}
 
 h4, .h4 {
   font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
 }
 
 h5, .h5 {
@@ -386,11 +411,21 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
 }
+@media (max-width: 1200px) {
+  .display-1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+}
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  .display-2 {
+    font-size: calc(1.675rem + 5.1vw);
+  }
 }
 
 .display-3 {
@@ -398,11 +433,21 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
 }
+@media (max-width: 1200px) {
+  .display-3 {
+    font-size: calc(1.575rem + 3.9vw);
+  }
+}
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
 }
 
 hr {
@@ -5033,6 +5078,11 @@ a.badge-red:focus, a.badge-red.focus {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
+}
+@media (max-width: 1200px) {
+  .close {
+    font-size: calc(1.275rem + 0.3vw);
+  }
 }
 .close:hover {
   color: #000;
@@ -15706,15 +15756,19 @@ h2 {
 
 .navbar-brand {
   position: absolute;
-  top: -13px;
-  left: -48px;
+  top: -45px;
+  left: 0;
   width: 280px;
   z-index: 10000;
 }
 @media (min-width: 768px) {
   .navbar-brand {
-    left: -64px;
     width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand {
+    left: -64px;
     top: -75px;
     transform: rotate(2deg);
   }
@@ -15737,11 +15791,22 @@ h2 {
 .slogan {
   margin: 0;
   color: #fff;
-  font-size: 3.75rem;
+  font-size: 2.625rem;
   font-weight: 900;
   letter-spacing: 0.03em;
   text-align: right;
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .slogan {
+    font-size: 3.75rem;
+  }
+}
+.slogan.breakpoint {
+  margin-bottom: 1em;
+  font-size: 3.75rem;
+  font-weight: 400;
+  text-align: left;
 }
 
 .sitename {
@@ -16042,12 +16107,13 @@ section#hero h2 {
   text-transform: uppercase;
 }
 section#hero nav a {
+  width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
   background-color: #00b8f1;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 section#hero nav a:before {
@@ -16058,7 +16124,6 @@ section#hero nav a:before {
 }
 
 .dice {
-  max-width: 80%;
   margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

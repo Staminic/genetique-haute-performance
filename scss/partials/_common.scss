@@ -48,8 +48,8 @@ h2 {
 
 .navbar-brand {
   position: absolute;
-  top: -13px;
-  left: -48px;
+  top: -45px;
+  left: 0;
   width: 280px;
   z-index: 10000;
 
@@ -57,10 +57,13 @@ h2 {
   //   left: -64px;
   //   width: 400px;
   // }
-
   @include media-breakpoint-up(md) {
-    left: -64px;
     width: 320px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    left: -64px;
+    // width: 320px;
     top: -75px;
     transform: rotate(2deg);
   }
@@ -83,11 +86,21 @@ h2 {
   margin: 0;
   // margin-top: auto;
   color: $white;
-  font-size: $h1-font-size;
+  font-size: $h2-font-size;
+  @include media-breakpoint-up(lg) {
+    font-size: $h1-font-size;
+  }
   font-weight: $font-weight-black;
   letter-spacing: 0.03em;
   text-align: right;
   text-transform: uppercase;
+
+  &.breakpoint {
+    margin-bottom: 1em;
+    font-size: $h1-font-size;
+    font-weight: $font-weight-normal;
+    text-align: left;
+  }
 }
 
 .sitename {

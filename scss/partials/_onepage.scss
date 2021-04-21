@@ -194,12 +194,13 @@ section {
 
     nav {
       a {
+        width: 100%;
         display: flex;
         align-items: center;
         margin-bottom: $spacer / 2;
         background-color: $blue;
         color: $white;
-        font-size: $h3-font-size;
+        font-size: $h4-font-size;
         text-transform: uppercase;
 
         &:before {
@@ -214,6 +215,6 @@ section {
 }
 
 .dice {
-  max-width: 80%;
+  // max-width: 80%;
   margin-top: $spacer;
 }
