@@ -206,9 +206,11 @@ h2 {
 }
 
 .nav {
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  &.main-nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .navbar-toggler {
@@ -221,13 +223,25 @@ h2 {
   }
 }
 
-.connexion {
+.header {
   .nav {
-    margin-left: -$nav-link-padding-x;
-  }
+    &.signin {
+      display: none;
+      @media (min-width: 660px) {
+        display: flex;
+      }
 
-  .nav-link {
-    text-decoration: underline;
+      .nav-link {
+        margin: $nav-link-padding-y;
+        background-color: $blue-ghp;
+        color: #fff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
   }
 }
 

@@ -15,7 +15,7 @@ JHtml::_('behavior.formvalidator');
 $this->form->reset(true);
 $this->form->loadFile(dirname(__FILE__) . '/' . 'reset_complete.xml');
 ?>
-<div class="row">
+<div class="row pt-5">
 	<div class="col-lg-8 offset-lg-2">
 		<div class="reset-complete<?php echo $this->pageclass_sfx; ?>">
 			<?php if ($this->params->get('show_page_heading')) : ?>

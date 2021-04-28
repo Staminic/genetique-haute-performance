@@ -10,6 +10,6 @@
 defined('_JEXEC') or die;
 
 ?>
-<div class="registration-complete<?php echo $this->pageclass_sfx; ?>">
+<div class="registration-complete pt-5 <?php echo $this->pageclass_sfx; ?>">
 <p class="mt-5"><a href="/">Retour à la page d'accueil</a></p>
 </div>

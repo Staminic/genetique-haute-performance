@@ -14,25 +14,29 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
         <div class="container-xl">
             <a class="navbar-brand" href="/"><img class="img-fluid" src="templates/genetique-haute-performance/img/badge2.png" alt="Logo Génétique Haute Performance" /></a>
             <div class="wrapper">
-                <p class="d-none d-lg-block slogan">Éleveurs Holstein</p>
-                <a hef="#" class="mt-auto text-white d-none">Connexion</a>
+                <nav class="nav signin">
+                    <a class="nav-link" href="/connexion" class="mt-auto text-white">Accès éleveur</a>
+                    <a class="nav-link" href="/connexion" class="mt-auto text-white">Accès technicien</a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand d-none d-lg-block sticky-top">
-        <!--
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navModules" aria-controls="navModules" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><img src="templates/genetique-haute-performance/img/bars-solid.svg" /></span>
-        </button>
-        -->
+    <?php if ( $this->countModules('navbar') ) : ?>
+        <nav class="navbar navbar-expand d-none d-lg-block sticky-top">
+            <!--
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navModules" aria-controls="navModules" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="templates/genetique-haute-performance/img/bars-solid.svg" /></span>
+            </button>
+            -->
 
-        <div class="collapse navbar-collapse" id="navModules">
-            <div class="container-xl">
-                <jdoc:include type="modules" name="navbar" />
+            <div class="collapse navbar-collapse" id="navModules">
+                <div class="container-xl">
+                    <jdoc:include type="modules" name="navbar" />
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    <?php endif; ?>
 
 
     <main class="main container">
