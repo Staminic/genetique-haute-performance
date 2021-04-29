@@ -1,0 +1,114 @@
+.ressources-techniciens {
+  .sticky-top {
+    position: static;
+  }
+}
+
+.banner-title {
+  padding-top: $spacer * 1.5;
+  padding-bottom: $spacer * 1.5;
+  background-color: #00b8f1;
+
+  h1 {
+    margin: 0;
+    color: $white;
+    font-family: $font-family-condensed;
+    font-size: $h3-font-size;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+}
+
+.user-pusher {
+  padding-top: 7rem;
+  @include media-breakpoint-up(md) {
+    padding-top: 3.25rem;
+  }
+}
+
+.com_docman {
+  @media (min-width: 660px) {
+    padding-top: 3.25rem;
+  }
+}
+
+.mobile-nav {
+  nav {
+    display: flex;
+    padding-top: 3.25rem;
+
+    @media (min-width: 660px) {
+      display: none;
+    }
+
+    a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacer / 2;
+      background-color: $blue-ghp;
+      color: $white;
+      font-size: $h4-font-size;
+      text-transform: uppercase;
+
+      &:before {
+        content: url("../img/nav-arrow.svg");
+        height: 30px;
+        line-height: 30px;
+        margin-right: $spacer / 2;
+      }
+    }
+  }
+}
+
+.login-description {
+  margin-bottom: $spacer;
+  line-height: $headings-line-height;
+  color: $dark-blue;
+  font-family: $font-family-condensed;
+  font-size: 2rem;
+  font-weight: $font-weight-light;
+}
+
+.docman_page_heading {
+  margin-bottom: $spacer * 2;
+  color: $dark-blue;
+  font-family: $font-family-condensed;
+  font-size: $h2-font-size;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+.docman_document {
+  h4 {
+    color: $dark-blue;
+    font-family: $font-family-condensed;
+    font-size: 2rem;
+    font-weight: $font-weight-light;
+
+    .label {
+      display: none;
+    }
+  }
+
+  .docman_download__button {
+    background-color: #575756;
+    border-color: #575756;
+    color: $white;
+  }
+
+  .docman_description {
+    font-family: $font-family-condensed;
+
+    .docman_thumbnail {
+      &.thumbnail {
+        margin-right: $spacer * 2;
+        border: 1px solid $light-gray;
+      }
+    }
+  }
+
+  .k-icon--size-medium {
+    font-size: 28px;
+  }
+}

@@ -12,11 +12,10 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 <body class="site <?php echo $active->alias . ($pageclass ? ' ' . $pageclass : ''); ?>">
     <header id="header" class="header">
         <div class="container-xl">
-            <a class="navbar-brand" href="/"><img class="img-fluid" src="templates/genetique-haute-performance/img/badge2.png" alt="Logo Génétique Haute Performance" /></a>
+            <a class="navbar-brand" href="/"><img class="img-fluid" src="templates/genetique-haute-performance/img/badge3.png" alt="Logo Génétique Haute Performance" /></a>
             <div class="wrapper">
                 <nav class="nav signin">
-                    <a class="nav-link" href="/connexion" class="mt-auto text-white">Accès éleveur</a>
-                    <a class="nav-link" href="/connexion" class="mt-auto text-white">Accès technicien</a>
+                    <jdoc:include type="modules" name="usermenu" />
                 </nav>
             </div>
         </div>
@@ -38,11 +37,21 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
         </nav>
     <?php endif; ?>
 
+    <?php if ( $this->countModules('header-below') ) : ?>
+        <div class="banner-title">
+            <div class="container">
+                <jdoc:include type="modules" name="header-below" />
+            </div>
+        </div>            
+    <?php endif; ?>
 
     <main class="main container">
         <div class="row">
             <div class="col-12">
                 <jdoc:include type="message" />
+                <?php if ( $this->countModules('component-above') ) : ?>
+                    <jdoc:include type="modules" name="component-above" />                    
+                <?php endif; ?>
                 <jdoc:include type="component" />
             </div>
         </div>

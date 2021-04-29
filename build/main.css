@@ -15881,7 +15881,12 @@ h2 {
 }
 
 .main {
+  padding-bottom: 3.5rem;
   flex: 1;
+}
+
+.onepage .main {
+  padding: 0;
 }
 
 .header {
@@ -15893,10 +15898,11 @@ h2 {
 
 .navbar-brand {
   position: absolute;
-  top: -45px;
+  top: -60px;
   left: 0;
   width: 280px;
   z-index: 10000;
+  transform: rotate(2deg);
 }
 @media (min-width: 768px) {
   .navbar-brand {
@@ -15905,13 +15911,33 @@ h2 {
 }
 @media (min-width: 992px) {
   .navbar-brand {
-    left: -64px;
     top: -75px;
-    transform: rotate(2deg);
+    left: -64px;
+    width: 320px;
   }
 }
 
-.wrapper {
+body.acces-technicien .navbar-brand {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 280px;
+  z-index: 10000;
+  transform: rotate(2deg) translateX(-50%);
+}
+@media (min-width: 768px) {
+  body.acces-technicien .navbar-brand {
+    width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  body.acces-technicien .navbar-brand {
+    top: -60px;
+    width: 320px;
+  }
+}
+
+.header .wrapper {
   width: 100%;
   height: 100px;
   display: flex;
@@ -15920,7 +15946,25 @@ h2 {
   align-items: flex-end;
 }
 @media (min-width: 768px) {
-  .wrapper {
+  .header .wrapper {
+    height: 200px;
+  }
+}
+
+.ressources-techniciens .header .wrapper {
+  height: 175px;
+}
+@media (min-width: 768px) {
+  .ressources-techniciens .header .wrapper {
+    height: 200px;
+  }
+}
+
+.documents-eleveurs .header .wrapper {
+  height: 175px;
+}
+@media (min-width: 768px) {
+  .documents-eleveurs .header .wrapper {
     height: 200px;
   }
 }
@@ -16052,6 +16096,14 @@ h2 {
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.ressources-techniciens .header .nav.signin .nav-link.technicien {
+  display: none;
+}
+
+.documents-eleveurs .header .nav.signin .nav-link.eleveur {
+  display: none;
 }
 
 footer {
@@ -16313,5 +16365,107 @@ section#hero .promises h2 {
 
 .dice {
   margin-top: 1rem;
+}
+
+.ressources-techniciens .sticky-top {
+  position: static;
+}
+
+.banner-title {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #00b8f1;
+}
+.banner-title h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.user-pusher {
+  padding-top: 7rem;
+}
+@media (min-width: 768px) {
+  .user-pusher {
+    padding-top: 3.25rem;
+  }
+}
+
+@media (min-width: 660px) {
+  .com_docman {
+    padding-top: 3.25rem;
+  }
+}
+
+.mobile-nav nav {
+  display: flex;
+  padding-top: 3.25rem;
+}
+@media (min-width: 660px) {
+  .mobile-nav nav {
+    display: none;
+  }
+}
+.mobile-nav nav a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  background-color: #006a96;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.mobile-nav nav a:before {
+  content: url("../img/nav-arrow.svg");
+  height: 30px;
+  line-height: 30px;
+  margin-right: 0.5rem;
+}
+
+.login-description {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #1c6093;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.docman_page_heading {
+  margin-bottom: 2rem;
+  color: #1c6093;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.docman_document h4 {
+  color: #1c6093;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.docman_document h4 .label {
+  display: none;
+}
+.docman_document .docman_download__button {
+  background-color: #575756;
+  border-color: #575756;
+  color: #fff;
+}
+.docman_document .docman_description {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.docman_document .docman_description .docman_thumbnail.thumbnail {
+  margin-right: 2rem;
+  border: 1px solid #f5f5f5;
+}
+.docman_document .k-icon--size-medium {
+  font-size: 28px;
 }
 /*# sourceMappingURL=main.css.map */

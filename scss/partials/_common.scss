@@ -34,7 +34,14 @@ h2 {
 }
 
 .main {
+  padding-bottom: $spacer * 3.5;
   flex: 1;
+}
+
+.onepage {
+  .main {
+    padding: 0;
+  }
 }
 
 //HEADER
@@ -48,37 +55,81 @@ h2 {
 
 .navbar-brand {
   position: absolute;
-  top: -45px;
+  top: -60px;
   left: 0;
   width: 280px;
   z-index: 10000;
+  transform: rotate(2deg);
 
-  // @include media-breakpoint-up(md) {
-  //   left: -64px;
-  //   width: 400px;
-  // }
   @include media-breakpoint-up(md) {
     width: 320px;
   }
 
   @include media-breakpoint-up(lg) {
-    left: -64px;
-    // width: 320px;
     top: -75px;
-    transform: rotate(2deg);
+    left: -64px;
+    width: 320px;
   }
 }
 
-.wrapper {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+body {
+  &.acces-technicien {
+    .navbar-brand {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      width: 280px;
+      z-index: 10000;
+      transform: rotate(2deg) translateX(-50%);
 
-  @include media-breakpoint-up(md) {
-    height: 200px;
+      @include media-breakpoint-up(md) {
+        width: 320px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        top: -60px;
+        width: 320px;
+      }
+    }
+  }
+}
+
+.header {
+  .wrapper {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include media-breakpoint-up(md) {
+      height: 200px;
+    }
+  }
+}
+
+.ressources-techniciens {
+  .header {
+    .wrapper {
+      height: 175px;
+
+      @include media-breakpoint-up(md) {
+        height: 200px;
+      }
+    }
+  }
+}
+
+.documents-eleveurs {
+  .header {
+    .wrapper {
+      height: 175px;
+
+      @include media-breakpoint-up(md) {
+        height: 200px;
+      }
+    }
   }
 }
 
@@ -240,6 +291,34 @@ h2 {
         font-size: 18px;
         text-align: center;
         text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.ressources-techniciens {
+  .header {
+    .nav {
+      &.signin {
+        .nav-link {
+          &.technicien {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.documents-eleveurs {
+  .header {
+    .nav {
+      &.signin {
+        .nav-link {
+          &.eleveur {
+            display: none;
+          }
+        }
       }
     }
   }

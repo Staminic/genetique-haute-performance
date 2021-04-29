@@ -36,7 +36,10 @@
 
 	<positions>
 		<position>navbar</position>
+		<position>usermenu</position>
+		<position>header-below</position>
 		<position>breadcrumbs</position>
+		<position>component-above</position>	
 		<position>sidebar</position>
 		<position>footer</position>
 		<position>debug</position>
