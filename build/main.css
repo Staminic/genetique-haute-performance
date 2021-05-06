@@ -16065,7 +16065,7 @@ body.acces-technicien .navbar-brand {
   top: -5px;
 }
 
-.nav.main-nav {
+.nav:not(.signin).main-nav {
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -16372,9 +16372,14 @@ section#hero .promises h2 {
 }
 
 .banner-title {
-  padding-top: 1.5rem;
+  padding-top: 5rem;
   padding-bottom: 1.5rem;
   background-color: #00b8f1;
+}
+@media (min-width: 768px) {
+  .banner-title {
+    padding-top: 1.5rem;
+  }
 }
 .banner-title h1 {
   margin: 0;

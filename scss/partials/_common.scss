@@ -257,10 +257,12 @@ body {
 }
 
 .nav {
-  &.main-nav {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  &:not(.signin) {
+    &.main-nav {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
