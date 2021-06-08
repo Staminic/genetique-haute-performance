@@ -84,6 +84,7 @@ section {
 }
 
 .benefits {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -204,7 +205,8 @@ section {
     }
 
     nav {
-      margin-top: 1rem;
+      // margin-top: 1rem;
+      margin-top: 3rem;
       @media (min-width: 660px) {
         margin-top: 3rem;
       }
@@ -229,7 +231,8 @@ section {
 
       &.signin {
         display: flex;
-        margin-top: 3rem;
+        // margin-top: 3rem;
+        margin-top: 1rem;
         @media (min-width: 660px) {
           display: none;
         }
@@ -254,4 +257,16 @@ section {
 .dice {
   // max-width: 80%;
   margin-top: $spacer;
+}
+
+section#hero nav a[href*="connexion"]:before {
+  content: url("https://www.programme-ghp.com/images/picto-lock.png");
+}
+
+@media (max-width: 991.98px) {
+  #hero .embed-responsive {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    order: -1;
+  }
 }

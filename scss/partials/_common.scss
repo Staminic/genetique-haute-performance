@@ -41,6 +41,10 @@ h2 {
 .onepage {
   .main {
     padding: 0;
+    overflow-x: hidden;
+    @include media-breakpoint-up(md) {
+      overflow-x: visible;
+    }
   }
 }
 
