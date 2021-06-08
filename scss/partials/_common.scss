@@ -284,7 +284,7 @@ body {
   .nav {
     &.signin {
       display: none;
-      @media (min-width: 660px) {
+      @media (min-width: 768px) {
         display: flex;
       }
 
@@ -300,6 +300,18 @@ body {
       }
     }
   }
+}
+
+.header .nav.signin .nav-link[href*="connexion"] {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav.signin .nav-link[href*="connexion"]:before {
+  display: flex;
+  align-items: center;
+  content: url("https://www.programme-ghp.com/images/picto-lock.png");
+  margin-right: 5px;
 }
 
 .ressources-techniciens {

@@ -16086,7 +16086,7 @@ body.acces-technicien .navbar-brand {
 .header .nav.signin {
   display: none;
 }
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .header .nav.signin {
     display: flex;
   }
@@ -16100,6 +16100,18 @@ body.acces-technicien .navbar-brand {
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.header .nav.signin .nav-link[href*=connexion] {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav.signin .nav-link[href*=connexion]:before {
+  display: flex;
+  align-items: center;
+  content: url("https://www.programme-ghp.com/images/picto-lock.png");
+  margin-right: 5px;
 }
 
 .ressources-techniciens .header .nav.signin .nav-link.technicien {
